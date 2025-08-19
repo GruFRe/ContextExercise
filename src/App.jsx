@@ -1,5 +1,5 @@
 import { ParentComponent } from "./components/ParentComponent";
-import { MyFirstContext } from "./context/MyFirstContext";
+import { MyFirstContext, useMyFirstContext } from "./context/MyFirstContext";
 
 const App = () => {
 	// const test = "test string for context";
