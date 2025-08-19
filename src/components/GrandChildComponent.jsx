@@ -1,11 +1,11 @@
 import { useMyFirstContext } from "../context/MyFirstContext";
 
 export const GrandChildComponent = () => {
-	const context = useMyFirstContext();
+	const contextVar = useMyFirstContext();
 	return (
 		<>
 			<h1>Grand Child Component</h1>
-			<p>{context}</p>
+			<p>{contextVar}</p>
 		</>
 	);
 };
