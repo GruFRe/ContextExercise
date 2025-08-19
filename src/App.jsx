@@ -1,14 +1,12 @@
 import { ParentComponent } from "./components/ParentComponent";
-import { createContext } from "react";
-
-export const MyFirstContext = createContext();
+import { MyFirstContext } from "./context/MyFirstContext";
 
 const App = () => {
-	const test = "test string for context";
+	// const test = "test string for context";
 	return (
 		<>
 			<h1>Context API</h1>
-			<MyFirstContext value={test}>
+			<MyFirstContext value={context}>
 				<ParentComponent />
 			</MyFirstContext>
 		</>

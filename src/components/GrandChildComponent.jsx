@@ -1,8 +1,7 @@
-import { use } from "react";
-import { MyFirstContext } from "../App";
+import { useMyFirstContext } from "../context/MyFirstContext";
 
 export const GrandChildComponent = () => {
-	const contextVars = use(MyFirstContext);
+	const contextVars = useMyFirstContext();
 	return (
 		<>
 			<h1>Grand Child Component</h1>
